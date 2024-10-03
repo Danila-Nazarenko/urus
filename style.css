@@ -40,7 +40,7 @@ html {
   }
 
   .header{
-    background-image: url('images/headerbg.jpg');
+    background-image: url('images/wavy-black-white-background.jpg');
     min-height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -106,8 +106,7 @@ right: 0;
 top: 100px;
 bottom: 0;
 margin: auto;
-width: 1152px;
-height: 500px;
+max-height: 100%;
 
 }
 
@@ -164,10 +163,13 @@ height: 500px;
 .info_gallery{
   display: flex;
   justify-content: space-between;
-  flex-direction: row;
   align-items: center;
+  gap: 20px;
   border-radius: 20px; 
-  max-width: 65%;
+  flex-wrap: wrap;
+}
+.info_gallery img{
+  max-width: 100%;
 }
 
 .color{
@@ -303,9 +305,7 @@ flex-basis: 594px;
 @media (max-width: 1820px){
 
   .info_gallery{
-      gap: 24px;
-      display: flex;
-      flex-direction: column;
+      max-width: 100%;
   }
   
   .info_gallery img{
@@ -332,6 +332,7 @@ flex-basis: 594px;
 
 .header_img{
   top: 0;
+  max-width: 100%;
 }
 
 .info{
