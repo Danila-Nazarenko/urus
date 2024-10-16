@@ -31,16 +31,204 @@ html {
     margin: 0 auto;
   }
 
-  .body{
+  body{
     font-family: "Inter", sans-serif;
     font-weight: 900;
     font-size: 24px;
     line-height: 1.3;
     font-style: normal;
   }
+  .interior{
+    height: 500px;
+    background-color: rgb(19, 23, 28);
+  }
+  .imgi{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+  }
+  @media (max-width:1200px) {
+    .imgi{
+      height: 50%;
+    }
+  }
+
+  .btn {
+    border: none;
+    font-family: 'Lato';
+    font-size: inherit;
+    color: inherit;
+    background: none;
+    cursor: pointer;
+    padding: 25px 80px;
+    display: inline-block;
+    margin: 15px 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    text-align: center;
+    
+  }
+  
+  .btn:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  
+
+  
+  .btn:before {
+    font-family: 'FontAwesome';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    position: relative;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  
+
+  .btn-sep {
+    padding: 25px 60px 25px 120px;
+  }
+  
+  .btn-sep:before {
+    background: rgba(0,0,0,0.15);
+  }
+  
+  .btn-1 {
+    background: linear-gradient(#ba3002, black);
+    color: #fff;
+  }
+  
+  .btn-1:hover {
+    background: linear-gradient(#971b1b, #2f2f2f);
+  }
+  
+  .btn-1:active {
+    background: linear-gradient(#971b1b, #2f2f2f);
+    top: 2px;
+  }
+  
+  .btn-1:before {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    line-height: 3;
+    font-size: 140%;
+    width: 60px;
+  }
+  
+  /* Button 2 */
+  .btn-2 {
+    background: #e3eb06;
+    color: #fff;
+  }
+  
+  .btn-2:hover {
+    background: #d5da5e;
+  }
+  
+  .btn-2:active {
+    background: #d5da5e;
+    top: 2px;
+  }
+  
+  .btn-2:before {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    line-height: 3;
+    font-size: 140%;
+    width: 60px;
+  }
+  
+  /* Button 3 */
+  .btn-3 {
+    background: #884200;
+    color: #fff;
+  }
+  
+  .btn-3:hover {
+    background: #ae5d00;
+  }
+  
+  .btn-3:active {
+    background: #ae5d00;
+    top: 2px;
+  }
+  
+  .btn-3:before {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    line-height: 3;
+    font-size: 140%;
+    width: 60px;
+  }
+  
+  /* Button 3 */
+  .btn-4 {
+    background: #34495e;
+    color: #fff;
+  }
+  
+  .btn-4:hover {
+    background: #2c3e50;
+  }
+  
+  .btn-4:active {
+    background: #2c3e50;
+    top: 2px;
+  }
+  
+  .btn-4:before {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    line-height: 3;
+    font-size: 140%;
+    width: 60px;
+  }
+  
+
+  .icon-cart:before {
+    content: "\f07a";
+  }
+  
+  .icon-heart:before {
+    content: "\f55a";
+  }
+  
+  .icon-info:before {
+    content: "\f05a";
+  }
+  
+  .icon-send:before {
+    content: "\f1d8";
+  }
+
+
+
 
   .header{
-    background-image: url('images/abstract-smooth-empty-grey-studio-well-use-as-background-business-report-digital-website-template-backdrop.jpg');
+    background: linear-gradient(#ba3002, #fafafa);
     min-height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
