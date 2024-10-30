@@ -11,6 +11,7 @@
 <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header class="header">
@@ -30,7 +31,7 @@
             <div class="header_content">
                 <h1 class="title">URUS</h1>
                 <img src="images/urus.png" class="header_img">
-                <h2 class="subtitle">на прокат</h2>
+                <h2 class="subtitle">for rent</h2>
             </div>
         </div>
     </header>
@@ -43,37 +44,37 @@
           <div class="info_content">
             <dl class="info_list">
               <div class="info_list-line">
-                <dt>Класс:</dt>
-                <dd>Внедорожники</dd>
+                <dt>Class:</dt>
+                <dd>SUV</dd>
               </div>
               <div class="info_list-line">
-                <dt>Мощность двигателя:</dt>
-                <dd>650 л.с.</dd>
+                <dt>Engine power:</dt>
+                <dd>650 h.p.</dd>
               </div>
               <div class="info_list-line">
-                <dt>Объем двигателя:</dt>
-                <dd>4.0 литра турбо</dd>
+                <dt>Engine capacity:</dt>
+                <dd>4.0 turbo</dd>
               </div>
               <div class="info_list-line">
-                <dt>Разгон 0-100:</dt>
-                <dd>3.6 секунды</dd>
+                <dt>Acceleration 0-100:</dt>
+                <dd>3.6 seconds</dd>
               </div>
               <div class="info_list-line">
-                <dt>Привод:</dt>
-                <dd>полный</dd>
+                <dt>Drive:</dt>
+                <dd>AWD</dd>
               </div>
               <div class="info_list-line">
-                <dt>Количество мест:</dt>
+                <dt>The number of seats:</dt>
                 <dd>5</dd>
               </div>
               <div class="info_list-line">
-                <dt>Минимальный срок аренды:</dt>
-                <dd>1 сутки</dd>
+                <dt>Minimum rental period:</dt>
+                <dd>1 day</dd>
               </div>
             </dl>
             <div class="order-box">
-              <p class="price">740 $ / Сутки</p>
-              <button class="order">ЗАБРОНИРОВАТЬ</button>
+              <p class="price">740 $ / DAY</p>
+              <button class="order">BOOK</button>
             </div>
           </div>
           <div class="info_gallery">
@@ -83,7 +84,7 @@
           </div>
       </section>
       <div class="color">
-        <p class="color_text">ВЫБЕРИ ЦВЕТ</p>
+        <p class="color_text">SELECT COLOR</p>
         <div class="color_gallery">
           <img src="images/color_b.png" class="color_gallery-start">
           <div class="color__gallery-box gallery-box">
@@ -107,41 +108,52 @@
         </div>
       </div>
       <div class="interior">  
-        <input id="e1" type="button" value="Черно-оранжевый" class="btn btn-1 btn-sep icon-info">
-        <input id="e2" type="button" value="Желтый" class="btn btn-2 btn-sep icon-info">
-        <input id="e3" type="button" value="Коричневый" class="btn btn-3 btn-sep icon-info">
+        <div class="int_btn">
+          <input id="e1" type="button" value="Orange-black" class="btn-new1 btn">
+          <input id="e2" type="button" value="Yellow" class="btn-new2 btn">
+          <input id="e3" type="button" value="Brown" class="btn-new3 btn"> 
+        </div>
+        
         
       <img src="images/interior.png" class="imgi" id="imgint">
     </div>
       <section class="contacs">
         <div class="container">
           <h2 class="contacs_title">
-            Забронировать автомобиль Lamborghini Urus
+            Book a Lamborghini Urus
           </h2>
           <div class="contacs_box">
             <div class="contacs_info">
-              <p class="contacs_headtext">Обязательный страховой взнос: 2000 $</p>
-              <p class="contacs_headtext">Личный водитель: по запросу</p>
+              <p class="contacs_headtext">Mandatory insurance deposit: 2000 $</p>
+              <p class="contacs_headtext">Personal driver: on request</p>
               <p class="contacs_text">
-                Мы свяжемся с вами в течение часа для уточнения деталей.
-                 Либо забронируйте автомобиль по номеру:
+                We will contact you within an hour to clarify details.
+                 Or book a car by number:
               </p>
               <a href="tel:999-99-99" class="phone">999-99-99</a>
               <p class="contacs_text-rules">
-                Нажимая кнопку «Подтвердить бронь» вы соглашаетесь с условиями обработки данных
+                By clicking the “Book” button you agree to the terms of data processing
               </p>
             </div>
            <form action="" class="contacs__form">
-            <input class="form_input" type="text" placeholder="ВАШЕ ИМЯ">
-            <input class="form_input" type="text" placeholder="НОМЕР ТЕЛЕФОНА">
-            <input class="form_input" type="text" placeholder="ГОРОД">
-            <button class="order form_order" type="submit">ЗАБРОНИРОВАТЬ</button>
+            <input class="form_input" type="text" placeholder="YOUR NAME">
+            <input class="form_input" type="text" placeholder="TELEPHONE NUMBER">
+            <input class="form_input" type="text" placeholder="CITY">
+            <button class="order form_order" type="submit">BOOK</button>
            </form>
           </div>
         </div> 
       </section>
+      <div class="map">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa6dfa1cd569952c8c80aa2ef064fb5f6292e5a77aa7e4f4f336eadb6229444d0&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
+      </div>
       <footer class="footer">
-        <a href="#" class="footer_link">Политика конфиденциальности</a>
+        <a href="#" class="footer_link">Privacy Policy</a><br>
+        <a href="https://www.facebook.com"><i class="fa-brands fa-facebook f_icon "></i></a>
+        <a href="https://www.instagram.com"><i class="fa-brands fa-instagram f_icon f_icon1" ></i></a>
+        <a href="https://twitter.com"><i class="fa-brands fa-twitter f_icon f_icon1 "></i></a>
+        <a href="https://www.youtube.com"><i class="fa-brands fa-youtube f_icon f_icon1"></i></a><br>
+        <p class="f_text">tel: +375 29 123 78 37 <br> Adress: st. Zibitskaya 6</p>
       </footer>
 
     

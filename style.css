@@ -42,6 +42,12 @@ html {
     height: 500px;
     background-color: rgb(19, 23, 28);
   }
+  /**.int_btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }*/
+
   .imgi{
     width: 100%;
     height: 100%;
@@ -51,179 +57,53 @@ html {
     .imgi{
       height: 50%;
     }
+    .btn-new1{
+      margin: 0px;
+    }
   }
+  .btn{
+    height: 70px;
+    width: 250px;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .btn-new1 {
+    border-radius: 10px;
+    color: white;
+    transition: .2s linear;
+    background: rgba(255,115,0,1);
+    margin-left:24%;
+}
 
-  .btn {
-    border: none;
-    font-family: 'Lato';
-    font-size: inherit;
-    color: inherit;
-    background: none;
-    cursor: pointer;
-    padding: 25px 80px;
-    display: inline-block;
-    margin: 15px 30px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 700;
-    outline: none;
-    position: relative;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
-    text-align: center;
-    
-  }
-  
-  .btn:after {
-    content: '';
-    position: absolute;
-    z-index: -1;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
-  }
-  
+.btn-new1:hover {
+    box-shadow: 0 0 0 2px white, 0 0 0 4px rgba(255,115,0,1);
+}
 
-  
-  .btn:before {
-    font-family: 'FontAwesome';
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    position: relative;
-    -webkit-font-smoothing: antialiased;
-  }
-  
-  
 
-  .btn-sep {
-    padding: 25px 60px 25px 120px;
-  }
-  
-  .btn-sep:before {
-    background: rgba(0,0,0,0.15);
-  }
-  
-  .btn-1 {
-    background: linear-gradient(#ba3002, black);
-    color: #fff;
-  }
-  
-  .btn-1:hover {
-    background: linear-gradient(#971b1b, #2f2f2f);
-  }
-  
-  .btn-1:active {
-    background: linear-gradient(#971b1b, #2f2f2f);
-    top: 2px;
-  }
-  
-  .btn-1:before {
-    position: absolute;
-    height: 100%;
-    left: 0;
-    top: 0;
-    line-height: 3;
-    font-size: 140%;
-    width: 60px;
-  }
-  
-  /* Button 2 */
-  .btn-2 {
-    background: #e3eb06;
-    color: #fff;
-  }
-  
-  .btn-2:hover {
-    background: #d5da5e;
-  }
-  
-  .btn-2:active {
-    background: #d5da5e;
-    top: 2px;
-  }
-  
-  .btn-2:before {
-    position: absolute;
-    height: 100%;
-    left: 0;
-    top: 0;
-    line-height: 3;
-    font-size: 140%;
-    width: 60px;
-  }
-  
-  /* Button 3 */
-  .btn-3 {
-    background: #884200;
-    color: #fff;
-  }
-  
-  .btn-3:hover {
-    background: #ae5d00;
-  }
-  
-  .btn-3:active {
-    background: #ae5d00;
-    top: 2px;
-  }
-  
-  .btn-3:before {
-    position: absolute;
-    height: 100%;
-    left: 0;
-    top: 0;
-    line-height: 3;
-    font-size: 140%;
-    width: 60px;
-  }
-  
-  /* Button 3 */
-  .btn-4 {
-    background: #34495e;
-    color: #fff;
-  }
-  
-  .btn-4:hover {
-    background: #2c3e50;
-  }
-  
-  .btn-4:active {
-    background: #2c3e50;
-    top: 2px;
-  }
-  
-  .btn-4:before {
-    position: absolute;
-    height: 100%;
-    left: 0;
-    top: 0;
-    line-height: 3;
-    font-size: 140%;
-    width: 60px;
-  }
-  
+.btn-new2 {
+  border-radius: 10px;
+  color: white;
+  transition: .2s linear;
+  background:  #fbf42c;
+  margin-left: 10px;
+}
 
-  .icon-cart:before {
-    content: "\f07a";
-  }
-  
-  .icon-heart:before {
-    content: "\f55a";
-  }
-  
-  .icon-info:before {
-    content: "\f05a";
-  }
-  
-  .icon-send:before {
-    content: "\f1d8";
-  }
+.btn-new2:hover {
+  box-shadow: 0 0 0 2px white, 0 0 0 4px  #fee591;
+}
 
+
+.btn-new3 {
+  border-radius: 10px;
+  color: white;
+  transition: .2s linear;
+  background: rgba(180,111,47,1);
+  margin-left: 10px;
+}
+
+.btn-new3:hover {
+  box-shadow: 0 0 0 2px white, 0 0 0 4px rgba(180,111,47,1);
+}
 
 
 
@@ -482,13 +362,7 @@ flex-basis: 594px;
   width: 100%;
 }
 
-.footer{
-  text-align: center;
-  padding: 15px 0 90px;
-  font-size: 14px;
-  color: #FFF;
-  background-color: #13171C;
-}
+
 
 @media (max-width: 1820px){
 
@@ -691,4 +565,24 @@ flex-basis: 594px;
   width: 100%;
 }
 }
+.footer{
 
+  text-align: center;
+  padding: 15px 0 40px;
+  font-size: 14px;
+  color: #FFF;
+  background-color: #13171C;
+}
+.f_icon{
+  margin-top: 20px;
+  
+  font-size: 30px;
+  align-items: center;
+}
+.f_text{
+  margin-top: 30px;
+  text-align: center;
+}
+.f_icon1{
+  margin-left: 10px;
+}
