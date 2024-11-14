@@ -57,14 +57,14 @@ html {
     .imgi{
       height: 50%;
     }
-    .btn-new1{
-      margin: 0px;
-    }
+    
   }
   .btn{
+    font-family: "Inter", sans-serif;
+    font-weight: 900;
+    font-size: 24px;
     height: 70px;
     width: 250px;
-    align-items: center;
     margin-bottom: 20px;
   }
   .btn-new1 {
@@ -84,7 +84,7 @@ html {
   border-radius: 10px;
   color: white;
   transition: .2s linear;
-  background:  #fbf42c;
+  background:  #d5cf25;
   margin-left: 10px;
 }
 
@@ -123,18 +123,67 @@ html {
   }
 
   .menu_btn{
-    width: 70px;
-    height: 23px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    position: static;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+  
   }
 
   .menu_btn span{
+    display: flex;
     background-color: #FF5017;
-    width: 100%;
-    height: 3px; 
+    width: 90%;
+    height: 3px;
+    margin-left: 5%;
+    transition: transform .5s, opacity .5s, background-color .5s;
   }
+  .menu_btn span:nth-child(1){
+    margin-top: 10px;
+  }
+  .menu_btn span:nth-child(2){
+    margin-top: -15px;
+  }
+  .menu_btn span:nth-child(3){
+    margin-top: -15px;
+  }
+
+  .menu{
+     position: absolute;
+    background-color: #FFF;
+    width: 250px;
+    padding: 75px 20px 30px 20px;
+    top: 0;
+    left: -250px;
+    font-size: 24px;
+    transition: transform .5s;
+  }
+   .menu_btn_t{
+ 
+  }
+  .header_top.open .mbo{
+    width: 40px;
+    height: 40px;
+    margin-top: -60px;
+    background-color: #000;
+  }
+  .mbo span{
+    
+  }
+ 
+
+  .hmt{
+    z-index: 2;
+  }
+  .hmtl1{
+    padding: 10px 0;
+  }
+
+  .header_top.open .menu{
+    transform: translateX(100%);
+    z-index: 1;
+  }
+  
 
  .header_content{
   display: flex;
@@ -365,7 +414,7 @@ flex-basis: 594px;
 
 
 @media (max-width: 1820px){
-
+  
   .info_gallery{
       max-width: 100%;
   }
@@ -379,9 +428,13 @@ flex-basis: 594px;
       .contacs_box{
           padding-left: 150px;
       }
+      
   }
 
 @media (max-width: 1200px){
+  .btn-new1{
+      margin-left: 10px;
+    }
 .title{
   font-size: 278px;
   padding-left: 0;
